@@ -3,18 +3,20 @@
     {'0',
         new[]
         {
-            " xXx ",
-            "x   x",
+            " XXX ",
             "X   X",
-            "x   x",
-            " xXx ",
+            "X   X",
+            "X   X",
+            "X   X",
+            " XXX ",
         }
     },
     {'1',
         new[]
         {
             " X",
-            "xX",
+            "XX",
+            " X",
             " X",
             " X",
             " X",
@@ -23,21 +25,100 @@
     {'2',
         new[]
         {
-            " xXx ",
-            "x   x",
-            "  xx ",
-            " x   ",
+            " XXX ",
+            "X   X",
+            "   X ",
+            " XX  ",
+            "X    ",
             "XXXXX",
         }
     },
     {'3',
         new[]
         {
-            " xXx ",
-            "x   x",
-            "   x ",
-            "x   x",
-            " xXx ",
+            " XXX ",
+            "X   X",
+            "   X ",
+            "    X",
+            "X   X",
+            " XXX ",
+        }
+    },
+    {'4',
+        new[]
+        {
+            "  X X",
+            " X  X",
+            "X   X",
+            "XXXXX",
+            "    X",
+            "    X",
+        }
+    },
+    {'5',
+        new[]
+        {
+            "XXXXX",
+            "X    ",
+            "XXXX ",
+            "    X",
+            "X   X",
+            " XXX ",
+        }
+    },
+    {'6',
+        new[]
+        {
+            " XXX ",
+            "X    ",
+            "XXXX ",
+            "X   X",
+            "X   X",
+            " XXX ",
+        }
+    },
+    {'7',
+        new[]
+        {
+            "XXXXX",
+            "    X",
+            "   X ",
+            "  X  ",
+            "  X  ",
+            "  X  ",
+        }
+    },
+    {'8',
+        new[]
+        {
+            " XXX ",
+            "X   X",
+            " XXX ",
+            "X   X",
+            "X   X",
+            " XXX ",
+        }
+    },
+    {'9',
+        new[]
+        {
+            " XXX ",
+            "X   X",
+            "X   X",
+            " XXXX",
+            "    X",
+            " XXX ",
+        }
+    },
+    {'.',
+        new[]
+        {
+            "  ",
+            "  ",
+            "  ",
+            "  ",
+            "xx",
+            "XX",
         }
     },
 };
@@ -46,6 +127,7 @@ Console.Write("Enter string: ");
 var str = Console.ReadLine();
 if (string.IsNullOrEmpty(str)) return;
 
+Console.WriteLine();
 var x = 0;
 foreach (var ch in str)
 {
